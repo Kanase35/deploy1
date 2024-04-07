@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h4>this is in trash html will include in the base html </h4>
+
+<form action="add/" method = 'post'>
+    {% csrf_token %}
+    <label for="num1">Enter num1: </label>
+    <input type="text" name="num1"><br>
+    <label for="num1">Enter num2: </label>
+    <input type="text" name="num2"><br>
+    <input type="submit">
+</form>
+
+{% endblock  %}    
